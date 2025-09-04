@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGraduationCap, FaChalkboardTeacher, FaUserFriends} from 'react-icons/fa';
-import exp0 from '../../assets/about/exp0.jpg';
+import exp0 from '../../assets/about/exp0.JPG';
 import exp1 from '../../assets/about/exp1.jpeg';
 
 const timelineData = [
