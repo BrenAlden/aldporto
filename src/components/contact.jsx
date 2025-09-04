@@ -64,7 +64,7 @@ function Contact() {
           <p className="text-gray-600 mb-8">
             I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions. Feel free to reach out using the form, or connect with me below.
           </p>
-          <div className="absolute flex-col items-center md:items-start space-y-4">
+          <div className="flex flex-col items-center md:items-start space-y-4">
              <a href="https://www.instagram.com/brenalden10/profilecard/?igsh=MXhxd3V1b2RjdHdueQ%3D%3D" className="w-full md:w-auto flex items-center justify-center gap-3 px-6 py-3 rounded-lg bg-pink-600 text-white font-semibold hover:bg-pink-500 transition-colors duration-300">
                 <InstagramIcon className="w-6 h-6" />
                 <span>Instagram</span>
