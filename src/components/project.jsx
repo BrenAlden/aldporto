@@ -59,14 +59,14 @@ const Project = () => {
 
     return (
         <>
-            <section id='project' ref={sectionRef} className="py-20 px-6 md:px-12">
+            <section ref={sectionRef} className="py-20 px-6 md:px-12">
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-2xl md:text-4xl font-bold text-center text-[#1661d2ff] mb-4">My Projects</h2>
                     <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
                         A collection of projects I've worked on, showcasing my skills in web development, intelligent systems, and more.
                     </p>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-4 px-4 md:px-20">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {initialProjects.map((project) => (
                             <ProjectCard 
                                 key={project.id} 
@@ -80,8 +80,7 @@ const Project = () => {
                         <div 
                             ref={additionalProjectsRef}
                             className={`
-                                grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-hidden transition-all duration-700 ease-in-out
-                                px-4 md:px-10 
+                                grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-hidden transition-all duration-700 
                                 ${showAll ? 'max-h-screen opacity-100 mt-8' : 'max-h-0 opacity-0'}
                             `}
                         >
