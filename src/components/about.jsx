@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import profileImage from '../assets/about/about1.jpg';
 import { FaGraduationCap, FaChalkboardTeacher } from 'react-icons/fa';
 import ExperienceModal from "./aboutcomponents/ExperienceModal"; 
-import './aboutcomponents/About.css';
+import "./aboutcomponents/about.css";
 
 function About() {
     const [isModalOpen, setIsModalOpen] = useState(false);
