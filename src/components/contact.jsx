@@ -89,7 +89,7 @@ function Contact() {
                 className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-400 focus:border-yellow-400 sm:text-sm"
               >
                 <option value="" disabled>Please select an option...</option>
-                <option value="cv_request">Request CV/Resume</option>
+                <option value="cv_request">Request Whatsapp</option>
                 <option value="collaboration">Collaboration Project</option>
                 <option value="feedback">Website Feedback</option>
               </select>

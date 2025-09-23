@@ -8,13 +8,14 @@ import { ViewProjectButton } from './homecomponents/ViewProjectButton';
 
 import { FaReact, FaPython } from 'react-icons/fa';
 import { SiCss3, SiJavascript, SiTailwindcss} from 'react-icons/si';
+import { DownloadCVButton } from './homecomponents/DownloadCVButton';
 
 function Home() {
 
   const scrollToProject = () => {
     const projectSection = document.getElementById("projects"); 
     if (projectSection) {
-      projectSection.scrollIntoView({ behavior: "smooth" });
+      projectSection.scrollView({ behavior: "smooth" });
     }
   };
 
@@ -57,11 +58,18 @@ function Home() {
               typingSpeed={2} pauseDuration={1500} showCursor={true} cursorCharacter="" loop={false} textColors={['#000000']} 
             />
           </div>
+          <div className="flex flex-col md:flex-row gap-4 self-center md:self-start">
+            <ViewProjectButton 
+              className="bg-[#FBBF24] text-white hover:bg-[#fee7ab] px-6 py-3 rounded-md"
+              onClick={scrollToProject}
+            > 
+              View My Projects
+            </ViewProjectButton>
 
-          <ViewProjectButton 
-            className="bg-[#FBBF24] text-white hover:bg-[#fee7ab] self-center md:self-start px-6 py-3 rounded-md"> 
-            View My Projects
-          </ViewProjectButton>
+            <DownloadCVButton className="bg-[#FBBF24] text-white hover:bg-[#fee7ab] px-6 py-3 rounded-md">
+              Download CV
+            </DownloadCVButton>
+          </div>
         </div>
       </motion.div>
     </div>
