@@ -7,7 +7,7 @@ const ViewProjectButton = React.forwardRef(({ className, children, ...props }, r
   const [isHovered, setIsHovered] = useState(false);
 
   const scrollToProject = () => {
-  const section = document.getElementById("project");
+  const section = document.getElementById("projects");
   if (section) {
     section.scrollIntoView({ behavior: "smooth" });
   }

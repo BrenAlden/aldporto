@@ -59,9 +59,11 @@ const Project = () => {
 
     return (
         <>
-            <section ref={sectionRef} className="py-20 px-6 md:px-12">
+            <section ref={sectionRef} id='projects' className="py-20 px-6 md:px-12">
                 <div className="max-w-6xl mx-auto">
-                    <h2 className="text-2xl md:text-4xl font-bold text-center text-[#1661d2ff] mb-4">My Projects</h2>
+                    <section>
+                     <h2 className="text-2xl md:text-4xl font-bold text-center text-[#1661d2ff] mb-4">My Projects</h2>
+                    </section>
                     <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
                         A collection of projects I've worked on, showcasing my skills in web development, intelligent systems, and more.
                     </p>
