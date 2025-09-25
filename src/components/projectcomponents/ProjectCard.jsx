@@ -3,7 +3,9 @@ import TechIcon from './TechIcon';
 
 const ProjectCard = ({ project, onViewDetail }) => {
     const truncateDescription = (text, maxLength) => {
-        if (text.length <= maxLength) return text;
+        if (!text || text.length <= maxLength) {
+            return text || '';
+        }
         return text.substr(0, maxLength) + '...';
     };
 
@@ -21,7 +23,8 @@ const ProjectCard = ({ project, onViewDetail }) => {
                 
                 <div className="mt-auto">
                     <div className="flex items-center gap-3 mb-4">
-                        {project.skill.slice(0, 4).map((tech, index) => (
+                        {/* Solusi: Gunakan (project.skill || []) untuk mencegah error. */}
+                        {(project.skill || []).slice(0, 4).map((tech, index) => (
                             <TechIcon key={index} toolName={tech} />
                         ))}
                     </div>
