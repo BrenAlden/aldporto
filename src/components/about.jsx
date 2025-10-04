@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import profileImage from '../assets/about/about1.jpg';
+import profileImage from '../assets/about/about1.png';
 import { FaGraduationCap, FaChalkboardTeacher } from 'react-icons/fa';
 import ExperienceModal from "./aboutcomponents/ExperienceModal"; 
 import "./aboutcomponents/about.css";
+import { EvervaultCard } from "./homecomponents/EvervaultCard";
 
 function About() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -60,11 +61,13 @@ function About() {
                     </div>
 
                     <div className="flex flex-col items-center justify-center w-full md:w-80 mt-5 md:mt-0 order-1 md:order-none">
+                        <EvervaultCard className="w-80 h-80"> 
                         <img
                             src={profileImage}
                             alt="Foto Bren Alden"
                             className="about-photo rounded-xl shadow-lg w-48 h-48 md:w-full md:h-auto object-cover transition-transform duration-300 hover:scale-105"
-                        />
+                        />        
+                        </EvervaultCard>
                         <div className="w-full mt-6 flex flex-row justify-around items-start text-center gap-2">
                             <div className="flex-1 bg-slate-100 p-3 rounded-lg">
                                 <h5 className="text-2xl md:text-3xl font-bold text-[#1661d2ff]">3+</h5>

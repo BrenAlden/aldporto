@@ -3,12 +3,14 @@ import { motion } from 'framer-motion';
 import './homecomponents/home.css';
 
 import profileImage from '../assets/homeimg/profile.png';
+import { EvervaultCard } from './homecomponents/EvervaultCard';
 import TextType from './homecomponents/TextType';
 import { ViewProjectButton } from './homecomponents/ViewProjectButton';
 
 import { FaReact, FaPython } from 'react-icons/fa';
 import { SiCss3, SiJavascript, SiTailwindcss} from 'react-icons/si';
 import { DownloadCVButton } from './homecomponents/DownloadCVButton';
+import CurrentProject from './homecomponents/CurrentProject'; 
 
 function Home() {
 
@@ -23,23 +25,26 @@ function Home() {
     <div className="relative w-full min-h-screen flex items-center justify-center bg-white">
       
       <motion.div 
-        className="home-container flex flex-col md:flex-row items-center justify-center w-full max-w-4xl gap-10 md:gap-16"
+        className="home-container flex flex-col md:flex-row items-center justify-center w-full max-w-4xl gap-8 md:gap-16 px-4"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <div className="relative hidden md:flex flex-shrink-0">
-          <img
-            src={profileImage}
-            alt="Portfolio Image"
-            className="rounded-3xl w-80 h-80 object-cover"
-          />
-          <div className="absolute top-[12%] left-[25%] text-4xl text-[#61DAFB] transform -rotate-12 hover:scale-125 transition-transform duration-200 ease-in-out"><FaReact /></div>
-          <div className="absolute top-[0%] right-[40%] text-4xl text-[#F7DF1E] rotate-[-10deg] hover:scale-125 transition-transform duration-300 ease-in-out"><SiJavascript /></div>
-          <div className="absolute top-[15%] right-[13%] text-4xl text-[#3776AB] rotate-12 hover:scale-125 transition-transform duration-300 ease-in-out"><FaPython /></div>
-          <div className="absolute top-[65%] left-[60%] text-4xl text-[#007ACC] rotate-[15deg] hover:scale-125 transition-transform duration-300 ease-in-out"><SiTailwindcss /></div>
-          <div className="absolute top-[45%] right-[10%] text-4xl text-[#FBBF24] rotate-[15deg] hover:scale-125 transition-transform duration-300 ease-in-out"><SiCss3 /></div>
-        </div>
+        
+        <EvervaultCard className="w-80 h-80 hidden md:flex"> 
+          <div className="relative flex flex-shrink-0">
+            <img
+              src={profileImage}
+              alt="Portfolio Image"
+              className="rounded-3xl w-80 h-80 object-cover" 
+            />
+            <div className="absolute top-[12%] left-[25%] text-4xl text-[#61DAFB] transform -rotate-12 hover:scale-125 transition-transform duration-200 ease-in-out"><FaReact /></div>
+            <div className="absolute top-[2%] right-[35%] text-4xl text-[#F7DF1E] rotate-[-10deg] hover:scale-125 transition-transform duration-300 ease-in-out"><SiJavascript /></div>
+            <div className="absolute top-[15%] right-[13%] text-4xl text-[#3776AB] rotate-12 hover:scale-125 transition-transform duration-300 ease-in-out"><FaPython /></div>
+            <div className="absolute top-[65%] left-[60%] text-4xl text-[#007ACC] rotate-[15deg] hover:scale-125 transition-transform duration-300 ease-in-out"><SiTailwindcss /></div>
+            <div className="absolute top-[45%] right-[10%] text-4xl text-[#FBBF24] rotate-[15deg] hover:scale-125 transition-transform duration-300 ease-in-out"><SiCss3 /></div>
+          </div>
+        </EvervaultCard>
 
         <div className="flex flex-col justify-center space-y-4 text-center md:text-left">
           <h1 className="text-4xl font-bold text-[#1661d2ff]">
@@ -69,6 +74,7 @@ function Home() {
               Download CV
             </DownloadCVButton>
           </div>
+          <CurrentProject projectName="Hanacaraka Recognition" />
         </div>
       </motion.div>
     </div>
