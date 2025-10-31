@@ -1,8 +1,6 @@
-"use client";
-
 import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
-import { AnimatePresence } from "framer-motion"; // <-- Import AnimatePresence
+import { AnimatePresence } from "framer-motion"; 
 import cv from '../../assets/CV Bren Alden.pdf';
 import CVModal from "./CVModal";
 

@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 
