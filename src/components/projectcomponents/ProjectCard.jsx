@@ -23,7 +23,6 @@ const ProjectCard = ({ project, onViewDetail }) => {
                 
                 <div className="mt-auto">
                     <div className="flex items-center gap-3 mb-4">
-                        {/* Solusi: Gunakan (project.skill || []) untuk mencegah error. */}
                         {(project.skill || []).slice(0, 4).map((tech, index) => (
                             <TechIcon key={index} toolName={tech} />
                         ))}

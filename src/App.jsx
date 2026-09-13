@@ -51,6 +51,7 @@ function App() {
           <About />
         </AnimatedSection>
       </div>
+
       <div id="project" ref={projectRef} className="min-h-screen grid place-items-center bg-white">
         <AnimatedSection>
           <Project />

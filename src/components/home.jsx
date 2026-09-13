@@ -48,17 +48,25 @@ function Home() {
 
         <div className="flex flex-col justify-center space-y-4 text-center md:text-left">
           <h1 className="text-4xl font-bold text-[#1661d2ff]">
-            <TextType text={["Welcome!", "Selamat Datang!", "你好!", "ようこそ!", "안녕하세요!"]} typingSpeed={75} pauseDuration={1500} showCursor={true} cursorCharacter="|" />
+            <TextType text={["Hello!", "Halo!", "你好!", "ようこそ!", "안녕하세요!"]} typingSpeed={75} pauseDuration={1500} showCursor={true} cursorCharacter="|" />
           </h1>
-          <h1 className="text-3xl font-bold">
-            <span className="bg-[#FBBF24] text-white px-2">
-              <TextType text={["My name is Bren Alden"]} typingSpeed={25} pauseDuration={1500} showCursor={true} cursorCharacter="" loop={false} textColors={['#FFFFFF']} />
+          <h1 className="text-3xl font-bold text-[#1661d2ff]">
+            My name is{' '}
+            <span className="bg-[#FBBF24] text-white px-2 py-1 rounded">
+              <TextType 
+                text={["Bren Alden"]} 
+                typingSpeed={25} 
+                pauseDuration={1500} 
+                showCursor={false}  
+                loop={false} 
+                textColors={['#FFFFFF']} 
+              />
             </span>
           </h1>
           <div className='text-lg max-w-lg min-h-[5rem]'>
             <TextType 
               text={[
-                "I'm an undergraduate student at Bina Nusantra University Alam Sutera majoring in Computer Science, with a huge passion in Intelligence Systems."
+                "I’m an undergraduate Computer Science student at Bina Nusantara University with a strong passion for Full-stack AI Development and Data Science. I also have experience working as an RPA Developer."
               ]} 
               typingSpeed={2} pauseDuration={1500} showCursor={true} cursorCharacter="" loop={false} textColors={['#000000']} 
             />
@@ -74,7 +82,7 @@ function Home() {
               Download CV
             </DownloadCVButton>
           </div>
-          <CurrentProject projectName="Hanacaraka Recognition" />
+          <CurrentProject projectName="RPA Developer Intern" />
         </div>
       </motion.div>
     </div>

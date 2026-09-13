@@ -11,10 +11,10 @@ const CurrentProject = ({ projectName }) => {
       </div>
 
       <p className="text-md text-gray-700">
-        Currently working on the {' '}
+        Currently working as {' '}
         <span className="font-semibold text-gray-900">
           <TextType 
-            text={[`${projectName} project...`]}
+            text={[`${projectName} at PT Astra Daihatsu Motor`]}
             typingSpeed={40}
             pauseDuration={5000}
             loop={false}
